@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using Unity.IO.LowLevel.Unsafe;
 using UnityEditor.Compilation;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class Movement : MonoBehaviour
 {
 
     Rigidbody rb;
-    AudioSource audioSource;
+    [SerializeField] AudioSource audioSource;
     [SerializeField] float speedOfRocket = 100;
     [SerializeField] float rotationSpeedOfRocket =20;
     // Start is called before the first frame update

@@ -395,6 +395,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoadDelay: 1
+  crash: {fileID: 8300000, guid: 843b81c9f4e1645e8986cf7c6b472501, type: 3}
+  success: {fileID: 8300000, guid: 6ea8cf15c0b3e4b338b5b817181fa6bf, type: 3}
 --- !u!108 &843818149
 Light:
   m_ObjectHideFlags: 0
@@ -814,6 +816,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5781033225215313975, guid: fcd62ebc7311847eeac926e49b02b678, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 843818147}
     - target: {fileID: 5781033225215313975, guid: fcd62ebc7311847eeac926e49b02b678, type: 3}
       propertyPath: speedOfRocket
       value: 150

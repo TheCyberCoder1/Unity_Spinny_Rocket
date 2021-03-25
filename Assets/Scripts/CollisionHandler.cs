@@ -1,13 +1,26 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 1f;
+    [SerializeField] AudioClip crash;
+    [SerializeField] AudioClip success;
+
+    AudioSource audioSource;
+
+    bool isTransitioning = false;
+
+    void Start() {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void OnCollisionEnter(Collision other) {
+        if (isTransitioning == true) { return;}
         switch (other.gameObject.tag) {
             case "Friendly":
                 Debug.Log("This thing is friendly");
@@ -21,15 +34,20 @@ public class CollisionHandler : MonoBehaviour
         }
     }
 
-    void StartSuccessSequence()
-    {
+    void StartSuccessSequence() {
+        isTransitioning = true;
+        audioSource.Stop();
+        audioSource.PlayOneShot(success);
         GetComponent<Movement>().enabled = false;
-        Invoke("LoadLevel", levelLoadDelay);
+        LoadLevel();
     }
 
     void StartCrashSequence() {
+        isTransitioning = true;
+        audioSource.Stop();
+        audioSource.PlayOneShot(crash);
         GetComponent<Movement>().enabled = false;
-        Invoke("ReloadLevel", levelLoadDelay);
+        ReloadLevel();
     }
 
     void LoadLevel() {

@@ -394,6 +394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0925682cdff254ceca7ac4f9c9f301e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelLoadDelay: 1
 --- !u!108 &843818149
 Light:
   m_ObjectHideFlags: 0
@@ -673,12 +674,16 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4492972736935767901, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7.3760004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492972736935767901, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 4492972736935767901, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.37
       objectReference: {fileID: 0}
     - target: {fileID: 4492972736935767901, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -710,6 +715,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4492972736935767901, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700498219682513531, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0128982
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700498219682513531, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0364237
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700498219682513531, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
+      propertyPath: m_Size.z
+      value: 1.0097094
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700498219682513531, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
+      propertyPath: m_Center.x
+      value: -0.0064490736
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700498219682513531, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
+      propertyPath: m_Center.y
+      value: 0.01821161
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700498219682513531, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
+      propertyPath: m_Center.z
+      value: -0.004854679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700498219682513531, guid: 7c01f61adc43d4bf9ad51fb6a8261cf0, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
